@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Snake</title>
+</head>
+
+<body>
+    <main class="container">
+        <h2 class="title">Classic Snake</h2>
+        <canvas id="canvas" width="500" height="500">
+            Your browser does not support canvas!
+        </canvas>
+        <div class="container_control">
+            <div style="text-align: center;">Score = <span id="total_food"></span></div>
+            <div class="container_arrow_buttons">
+                <a href="#" id="up_arrow" class="arrow_button"></a>
+                <a href="#" id="down_arrow" class="arrow_button"></a>
+                <a href="#" id="left_arrow" class="arrow_button"></a>
+                <a href="#" id="right_arrow" class="arrow_button"></a>
+            </div>
+            <div class="container_buttons">
+                <input id="start_button" type="button" value="Start" />
+                <input id="stop_button" type="button" value="Pause" />
+                <input id="restart_button" type="button" value="Restart" />
+            </div>
+        </div>
+    </main>
+
+    <script src="./game.js"></script>
+    <script src="./Snake.js"></script>
+</body>
+
+</html>
